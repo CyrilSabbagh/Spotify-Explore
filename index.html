@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>dailyCodeTest</title>
+        <link rel="stylesheet" href="styles/reset.css">
+        <link rel="stylesheet" href="styles/main.css">
+    </head>
+    <body>
+        <div id="content">
+            <div id="login-container">
+                <div class="login">
+                    <h1>Login</h1>
+                    <button id="login-button" class="big-btn">Log in with Spotify</button>
+                    <p class="login-desc">Please login to get access to  spotify content.</p>
+                    <p class="login-desc-small">You will automatically be redirected to this page after login.</p>
+                </div>
+            </div>
+            <div id="app-container" style="display:none;">
+                <section id="artistSection">
+                    <div id="profilePic"><img src="http://lorempixel.com/200/200/" alt=""></div>
+                    <div class="artistDesc">
+                        <h3 id="artistName">[Name]</h3>
+                        <div id="artistFollowers">[Followers]</div>
+                        <div class="artistButtons">
+                            <a id="open-button" href="#" target="_blank" class="small-btn">open</a>
+                            <button id="logout-button" class="small-btn">logout</button>
+                        </div>
+                    </div>
+                </section>
+                <section id="topTrackSection">
+                    <audio id="topTrackPlayer" src="" controls>
+                        Your browser does not support the <code>audio</code> element.
+                    </audio>
+                    <div id="topTrackSectionList"></div>
+                </section>
+                <section id="relatedArtistSection"></section>
+            </div>
+        </div>
+        <script src="js/main.js"></script>
+    </body>
+</html>
