@@ -174,7 +174,6 @@ a.small-btn {
 #topTrackSectionList li {
     min-height: 50px;
     background-color: #282828;
-    border-bottom: 1px solid #404040;
     color: #ffffff;
     padding: 5px 20px;
     display: -ms-flexbox;
@@ -183,6 +182,11 @@ a.small-btn {
         align-items: center;
     cursor: pointer;
 }
+
+#topTrackSectionList li:not(:last-of-type) {
+    border-bottom: 1px solid #404040;
+}
+
 #topTrackSection audio {
     width: 100%;
 }
