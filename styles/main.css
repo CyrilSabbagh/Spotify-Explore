@@ -249,6 +249,11 @@ a.small-btn {
 #app-container #relatedArtistSection .artistItem:hover .artistDesc {
     max-width: 150px;
     padding: 0 10px;
+    min-width: 80px;
+}
+
+#app-container #relatedArtistSection .artistItem:hover .artistDesc .artistTitle{
+    margin: 0 auto;
 }
 
 #app-container #relatedArtistSection .artistItem .artistDesc {
@@ -260,6 +265,7 @@ a.small-btn {
     max-width: 0;
     overflow: hidden;
     transition: max-width,padding 300ms linear;
+    font-size: 12px;
 }
 
 #app-container #relatedArtistSection .artistPic {
